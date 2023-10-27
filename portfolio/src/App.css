@@ -239,3 +239,9 @@ input:checked + label .description {
 .card[for="c4"] {
   background-image: url("https://i.imgur.com/yTRy8UG.png");
 }
+
+#tsparticles {
+  position: absolute !important;
+  height: 100vh !important;
+  width: 100% !important;
+}
