@@ -2,11 +2,12 @@ import Tilt from "react-parallax-tilt";
 import styled from "styled-components";
 
 const ShowcaseWrapper = styled.div`
-  background: linear-gradient(
-    109deg,
-    var(--secondary) 50.5%,
-    var(--background) 50.55%
-  );
+  //   background: linear-gradient(
+  //     109deg,
+  //     var(--secondary) 50.5%,
+  //     var(--background) 50.55%
+  //   );
+  background: var(--background);
 `;
 
 const ShowcaseContainer = styled.div`
@@ -47,6 +48,24 @@ const Description = styled.p`
   font-weight: 200;
 `;
 
+const ButtonStyled = styled.button`
+  min-width: 70px;
+  padding: 5px;
+  margin: 5px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 2px solid var(--primary);
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    transition: all 0.7s ease-out;
+    background-color: var(--primary);
+  }
+`;
+
 export const CardShowcase = () => {
   return (
     <>
@@ -67,9 +86,9 @@ export const CardShowcase = () => {
                   style={{
                     height: "200px",
                     width: "400px",
-                    backgroundColor: "darkgreen",
                     backgroundImage: "url(https://i.imgur.com/fY0Txme.png)",
                     backgroundSize: "cover",
+                    boxShadow: "0px 18px 10px -15px rgba(0,0,0,1.0)",
                   }}
                 ></div>
               </Tilt>
@@ -78,8 +97,8 @@ export const CardShowcase = () => {
               <p>Simple Weather App</p>
               <Description>Built with OpenWeather API</Description>
               <div className="btn-container">
-                <button>Live Demo</button>
-                <button>Code</button>
+                <ButtonStyled>Live Demo</ButtonStyled>
+                <ButtonStyled>Code</ButtonStyled>
               </div>
             </TextContainer>
           </ShowcaseContainerLeft>
@@ -98,9 +117,9 @@ export const CardShowcase = () => {
                   style={{
                     height: "200px",
                     width: "400px",
-                    backgroundColor: "darkgreen",
                     backgroundImage: "url(https://i.imgur.com/IJFxqez.png)",
                     backgroundSize: "cover",
+                    boxShadow: "0px 18px 10px -15px rgba(0,0,0,1.0)",
                   }}
                 ></div>
               </Tilt>
@@ -112,8 +131,8 @@ export const CardShowcase = () => {
               <p>Advanced Weather App</p>
               <Description>Built with OpenWeather API</Description>
               <div className="btn-container">
-                <button>Live Demo</button>
-                <button>Code</button>
+                <ButtonStyled>Live Demo</ButtonStyled>
+                <ButtonStyled>Code</ButtonStyled>
               </div>
             </TextContainer>
           </ShowcaseContainerRight>
@@ -132,9 +151,9 @@ export const CardShowcase = () => {
                   style={{
                     height: "200px",
                     width: "400px",
-                    backgroundColor: "darkgreen",
                     backgroundImage: "url(https://i.imgur.com/YsBWo3u.png)",
                     backgroundSize: "cover",
+                    boxShadow: "0px 18px 10px -15px rgba(0,0,0,1.0)",
                   }}
                 ></div>
               </Tilt>
@@ -143,8 +162,10 @@ export const CardShowcase = () => {
               <p>Shortly: Link Shortner</p>
               <Description>Design</Description>
               <div className="btn-container">
-                <button>Live Demo</button>
-                <button>Code</button>
+                <a href="https://shortly-a5f5b.web.app/" target="_blank">
+                  <ButtonStyled>Live Demo</ButtonStyled>
+                </a>
+                <ButtonStyled>Code</ButtonStyled>
               </div>
             </TextContainer>
           </ShowcaseContainerLeft>
@@ -163,9 +184,9 @@ export const CardShowcase = () => {
                   style={{
                     height: "200px",
                     width: "400px",
-                    backgroundColor: "darkgreen",
                     backgroundImage: "url(https://i.imgur.com/yTRy8UG.png)",
                     backgroundSize: "cover",
+                    boxShadow: "0px 18px 10px -15px rgba(0,0,0,1.0)",
                   }}
                 ></div>
               </Tilt>
@@ -179,8 +200,8 @@ export const CardShowcase = () => {
                 Multi-page website built for a game server
               </Description>
               <div className="btn-container">
-                <button>Live Demo</button>
-                <button>Code</button>
+                <ButtonStyled>Live Demo</ButtonStyled>
+                <ButtonStyled>Code</ButtonStyled>
               </div>
             </TextContainer>
           </ShowcaseContainerRight>
