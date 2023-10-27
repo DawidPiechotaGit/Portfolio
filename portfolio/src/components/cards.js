@@ -1,11 +1,17 @@
 import "../App.css";
+import styled from "styled-components";
+
+const AboutMeWrapper = styled.div`
+  height: 100vh;
+  background: var(--secondary);
+`;
 
 export const Cards = () => {
   return (
     <>
-      <div className="card-wrapper" id="cards">
+      <AboutMeWrapper className="card-wrapper" id="cards">
         <div className="card-container">
-          <input type="radio" name="slide" id="c1" />
+          <input type="radio" name="slide" id="c1" defaultChecked />
           <label htmlFor="c1" className="card">
             <div className="row">
               <div className="icon">1</div>
@@ -46,7 +52,7 @@ export const Cards = () => {
             </div>
           </label>
         </div>
-      </div>
+      </AboutMeWrapper>
     </>
   );
 };
