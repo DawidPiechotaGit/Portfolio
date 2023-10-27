@@ -23,10 +23,10 @@ export const ParticleBG = () => {
           fpsLimit: 60,
           particles: {
             number: {
-              value: 80,
+              value: 20,
               density: {
                 enable: true,
-                value_area: 800,
+                value_area: 400,
               },
             },
             color: {
@@ -76,7 +76,7 @@ export const ParticleBG = () => {
             },
             move: {
               enable: true,
-              speed: 1,
+              speed: 0.5,
               direction: "none",
               random: false,
               straight: false,
@@ -97,7 +97,7 @@ export const ParticleBG = () => {
                 mode: "repulse",
               },
               onclick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               resize: true,
