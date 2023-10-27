@@ -11,9 +11,12 @@ export const Home = () => {
       <Navigation></Navigation>
       <div className="home-wrapper">
         <div className="home-container">
-          <h1>
-            <span>Junior</span> Frontend Developer
-          </h1>
+          <div className="title-wrapper">
+            <h1>
+              <span>Junior</span> Frontend Developer
+            </h1>
+            <h2>Dawid Piechota</h2>
+          </div>
           <div className="circle-wrapper">
             <div className="outline circle"></div>
             <img
