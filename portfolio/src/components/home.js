@@ -7,8 +7,8 @@ export const Home = () => {
   return (
     <>
       <Title></Title>
-      <CardShowcase></CardShowcase>
       <Cards></Cards>
+      <CardShowcase></CardShowcase>
     </>
   );
 };

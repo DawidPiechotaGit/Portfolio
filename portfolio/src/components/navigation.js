@@ -47,7 +47,7 @@ export const Navigation = () => {
               to="cards"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={0}
               duration={1500}
             >
               About Me
