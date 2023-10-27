@@ -4,8 +4,8 @@ import styled from "styled-components";
 const ShowcaseWrapper = styled.div`
   background: linear-gradient(
     109deg,
-    var(--background) 51%,
-    var(--secondary) 51.05%
+    var(--secondary) 50.5%,
+    var(--background) 50.55%
   );
 `;
 
@@ -29,6 +29,7 @@ const ShowcaseContainerRight = styled.div`
   width: 100%;
   gap: 5%;
   color: white;
+  margin-bottom: 10%;
 `;
 
 const TextContainer = styled.div`
@@ -138,10 +139,7 @@ export const CardShowcase = () => {
                 ></div>
               </Tilt>
             </div>
-            <TextContainer
-              className="text-container"
-              style={{ alignItems: "flex-end" }}
-            >
+            <TextContainer className="text-container">
               <p>Shortly: Link Shortner</p>
               <Description>Design</Description>
               <div className="btn-container">
