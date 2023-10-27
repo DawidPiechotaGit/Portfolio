@@ -72,7 +72,7 @@ export const CardShowcase = () => {
       <ShowcaseWrapper className="showcase-wrapper">
         <ShowcaseContainer className="showcase-container">
           <ShowcaseContainerLeft className="showcase1-container">
-            <div className="showcase1-img">
+            <div>
               <CardTilt url="https://i.imgur.com/fY0Txme.png"></CardTilt>
             </div>
             <TextContainer className="text-container">
@@ -92,7 +92,7 @@ export const CardShowcase = () => {
             </TextContainer>
           </ShowcaseContainerLeft>
           <ShowcaseContainerRight className="showcase1-container">
-            <div className="showcase1-img">
+            <div>
               <CardTilt url="https://i.imgur.com/IJFxqez.png"></CardTilt>
             </div>
             <TextContainer
@@ -115,7 +115,7 @@ export const CardShowcase = () => {
             </TextContainer>
           </ShowcaseContainerRight>
           <ShowcaseContainerLeft className="showcase1-container">
-            <div className="showcase1-img">
+            <div>
               <CardTilt url="https://i.imgur.com/YsBWo3u.png"></CardTilt>
             </div>
             <TextContainer className="text-container">
@@ -135,7 +135,7 @@ export const CardShowcase = () => {
             </TextContainer>
           </ShowcaseContainerLeft>
           <ShowcaseContainerRight className="showcase1-container">
-            <div className="showcase1-img">
+            <div>
               <CardTilt url="https://i.imgur.com/yTRy8UG.png"></CardTilt>
             </div>
             <TextContainer
