@@ -17,7 +17,6 @@
 body {
   font-family: "Orbitron";
   font-weight: 400;
-  /* background-color: var(--background); */
   background: linear-gradient(
     109deg,
     var(--background) 60%,
@@ -82,11 +81,11 @@ small {
   margin-right: 5%;
 }
 
-.home-container > .title-wrapper > h1 > span {
+/* .home-container > .title-wrapper > h1 > span {
   color: transparent;
   font-size: 50px;
   -webkit-text-stroke: 1px var(--accent);
-}
+} */
 
 .home-container > .title-wrapper > h2 {
   color: var(--primary);
