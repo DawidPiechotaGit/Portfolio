@@ -21,6 +21,11 @@ const NavContainer = styled.div`
 
 const TextLeft = styled.a`
   padding: 0 10px;
+  text-decoration: none;
+  color: white;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const TextRight = styled.a`
@@ -36,11 +41,14 @@ export const Navigation = () => {
         <NavContainer className="nav-container">
           <div>
             <TextLeft>About Me</TextLeft>
-            <TextLeft>Showcase</TextLeft>
+            <TextLeft href="">Showcase</TextLeft>
             <TextLeft>Contact</TextLeft>
           </div>
           <div>
-            <TextRight>
+            <TextRight
+              href="https://github.com/DawidPiechotaGit"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -53,7 +61,10 @@ export const Navigation = () => {
                 />
               </svg>
             </TextRight>
-            <TextRight>
+            <TextRight
+              href="https://www.linkedin.com/in/dawid-piechota-206213266/"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -66,7 +77,10 @@ export const Navigation = () => {
                 />
               </svg>
             </TextRight>
-            <TextRight>
+            <TextRight
+              href="https://www.linkedin.com/in/dawid-piechota-206213266/"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 384 512"
