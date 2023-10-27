@@ -12,7 +12,7 @@ const ShowcaseWrapper = styled.div`
 
 const ShowcaseContainer = styled.div`
   padding: 5% 20%;
-  height: 150vh;
+  height: 170vh;
 `;
 
 const ShowcaseContainerLeft = styled.div`
@@ -159,6 +159,29 @@ export const CardShowcase = () => {
               </div>
             </TextContainer>
           </ShowcaseContainerRight>
+          <ShowcaseContainerLeft className="showcase1-container">
+            <div>
+              <CardTilt url="https://i.imgur.com/cAobfNo.png"></CardTilt>
+            </div>
+            <TextContainer className="text-container">
+              <p>Calmly</p>
+              <Description>
+                Calmly offers an interactive toolkit that will measure your
+                stress and provide the necessary tools to brighten your day.
+              </Description>
+              <div className="btn-container">
+                <a href="https://calmly.space/#/" target="_blank">
+                  <ButtonStyled>Live Demo</ButtonStyled>
+                </a>
+                <a
+                  href="https://github.com/infoshareacademy/jfddr9-calmly"
+                  target="_blank"
+                >
+                  <ButtonStyled>Code</ButtonStyled>
+                </a>
+              </div>
+            </TextContainer>
+          </ShowcaseContainerLeft>
         </ShowcaseContainer>
       </ShowcaseWrapper>
     </>
