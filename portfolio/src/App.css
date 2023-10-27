@@ -62,6 +62,74 @@ small {
   font-size: 0.75rem; /* 12px */
 }
 
+.home-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container > h1 {
+  color: var(--text);
+  font-size: 50px;
+  margin-right: 5%;
+}
+
+.home-container > h1 > span {
+  color: transparent;
+  font-size: 50px;
+  -webkit-text-stroke: 1px var(--accent);
+}
+
+.circle-wrapper {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin: 10px;
+}
+
+.image-icon {
+  position: absolute;
+  color: #fff;
+  font-size: 55px;
+  top: 125px;
+  left: 125px;
+  transform: translate(-50%, -50%);
+  height: 240px;
+  width: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: -5px -115px;
+  background-color: rgb(233, 233, 233);
+}
+
+.outline {
+  background-color: var(--primary);
+  border: 2.5px dashed var(--primary);
+}
+
+.circle {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 2.5px;
+  background-clip: content-box;
+  animation: spin 25s linear infinite;
+}
+
+.circle-wrapper:active .circle {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
 .card-wrapper {
   width: 100%;
   height: 100vh;
