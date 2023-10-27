@@ -1,5 +1,5 @@
-import Tilt from "react-parallax-tilt";
 import styled from "styled-components";
+import { CardTilt } from "./tilt";
 
 const ShowcaseWrapper = styled.div`
   //   background: linear-gradient(
@@ -73,25 +73,7 @@ export const CardShowcase = () => {
         <ShowcaseContainer className="showcase-container">
           <ShowcaseContainerLeft className="showcase1-container">
             <div className="showcase1-img">
-              <Tilt
-                glareEnable="true"
-                glareColor="white"
-                transitionSpeed={1200}
-                tiltMaxAngleX={15}
-                tiltMaxAngleY={15}
-                transitionEasing="cubic-bezier(.03,.98,.52,.99)"
-                glareMaxOpacity={0.2}
-              >
-                <div
-                  style={{
-                    height: "200px",
-                    width: "400px",
-                    backgroundImage: "url(https://i.imgur.com/fY0Txme.png)",
-                    backgroundSize: "cover",
-                    boxShadow: "0px 18px 10px -15px rgba(0,0,0,1.0)",
-                  }}
-                ></div>
-              </Tilt>
+              <CardTilt url="https://i.imgur.com/fY0Txme.png"></CardTilt>
             </div>
             <TextContainer className="text-container">
               <p>Simple Weather App</p>
@@ -111,25 +93,7 @@ export const CardShowcase = () => {
           </ShowcaseContainerLeft>
           <ShowcaseContainerRight className="showcase1-container">
             <div className="showcase1-img">
-              <Tilt
-                glareEnable="true"
-                glareColor="white"
-                transitionSpeed={1200}
-                tiltMaxAngleX={15}
-                tiltMaxAngleY={15}
-                transitionEasing="cubic-bezier(.03,.98,.52,.99)"
-                glareMaxOpacity={0.2}
-              >
-                <div
-                  style={{
-                    height: "200px",
-                    width: "400px",
-                    backgroundImage: "url(https://i.imgur.com/IJFxqez.png)",
-                    backgroundSize: "cover",
-                    boxShadow: "0px 18px 10px -15px rgba(0,0,0,1.0)",
-                  }}
-                ></div>
-              </Tilt>
+              <CardTilt url="https://i.imgur.com/IJFxqez.png"></CardTilt>
             </div>
             <TextContainer
               className="text-container"
@@ -152,25 +116,7 @@ export const CardShowcase = () => {
           </ShowcaseContainerRight>
           <ShowcaseContainerLeft className="showcase1-container">
             <div className="showcase1-img">
-              <Tilt
-                glareEnable="true"
-                glareColor="white"
-                transitionSpeed={1200}
-                tiltMaxAngleX={15}
-                tiltMaxAngleY={15}
-                transitionEasing="cubic-bezier(.03,.98,.52,.99)"
-                glareMaxOpacity={0.2}
-              >
-                <div
-                  style={{
-                    height: "200px",
-                    width: "400px",
-                    backgroundImage: "url(https://i.imgur.com/YsBWo3u.png)",
-                    backgroundSize: "cover",
-                    boxShadow: "0px 18px 10px -15px rgba(0,0,0,1.0)",
-                  }}
-                ></div>
-              </Tilt>
+              <CardTilt url="https://i.imgur.com/YsBWo3u.png"></CardTilt>
             </div>
             <TextContainer className="text-container">
               <p>Shortly: Link Shortner</p>
@@ -190,25 +136,7 @@ export const CardShowcase = () => {
           </ShowcaseContainerLeft>
           <ShowcaseContainerRight className="showcase1-container">
             <div className="showcase1-img">
-              <Tilt
-                glareEnable="true"
-                glareColor="white"
-                transitionSpeed={1200}
-                tiltMaxAngleX={15}
-                tiltMaxAngleY={15}
-                transitionEasing="cubic-bezier(.03,.98,.52,.99)"
-                glareMaxOpacity={0.2}
-              >
-                <div
-                  style={{
-                    height: "200px",
-                    width: "400px",
-                    backgroundImage: "url(https://i.imgur.com/yTRy8UG.png)",
-                    backgroundSize: "cover",
-                    boxShadow: "0px 18px 10px -15px rgba(0,0,0,1.0)",
-                  }}
-                ></div>
-              </Tilt>
+              <CardTilt url="https://i.imgur.com/yTRy8UG.png"></CardTilt>
             </div>
             <TextContainer
               className="text-container"

@@ -3,12 +3,9 @@ import { loadFull } from "tsparticles";
 
 export const ParticleBG = () => {
   const particlesInit = async (main) => {
-    console.log(main);
     await loadFull(main);
   };
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  const particlesLoaded = (container) => {};
   return (
     <>
       <Particles
