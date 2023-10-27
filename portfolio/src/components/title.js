@@ -1,10 +1,12 @@
 import "../App.css";
 import { ParticleBG } from "./particles-bg";
+import { Navigation } from "./navigation";
 
 export const Title = () => {
   return (
     <>
       <ParticleBG></ParticleBG>
+      <Navigation></Navigation>
       <div className="home-wrapper">
         <div className="home-container">
           <div className="title-wrapper">
