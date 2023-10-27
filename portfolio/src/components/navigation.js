@@ -1,5 +1,6 @@
 import "../App.css";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 const NavWrapper = styled.div`
   position: sticky;
@@ -15,17 +16,8 @@ const NavContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   color: white;
-  padding: 10px;
+  padding: 10px 5%;
   align-items: center;
-`;
-
-const TextLeft = styled.a`
-  padding: 0 10px;
-  text-decoration: none;
-  color: white;
-  &:hover {
-    cursor: pointer;
-  }
 `;
 
 const TextRight = styled.a`
@@ -40,9 +32,46 @@ export const Navigation = () => {
       <NavWrapper className="nav-wrapper">
         <NavContainer className="nav-container">
           <div>
-            <TextLeft>About Me</TextLeft>
-            <TextLeft href="">Showcase</TextLeft>
-            <TextLeft>Contact</TextLeft>
+            <Link
+              className="text-left"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Home
+            </Link>
+            <Link
+              className="text-left"
+              to="cards"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              About Me
+            </Link>
+            <Link
+              className="text-left"
+              to="showcase"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Showcase
+            </Link>
+            <Link
+              className="text-left"
+              to="showcase"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Contact
+            </Link>
           </div>
           <div>
             <TextRight

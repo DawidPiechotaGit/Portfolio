@@ -69,7 +69,7 @@ const ButtonStyled = styled.button`
 export const CardShowcase = () => {
   return (
     <>
-      <ShowcaseWrapper className="showcase-wrapper">
+      <ShowcaseWrapper className="showcase-wrapper" id="showcase">
         <ShowcaseContainer className="showcase-container">
           <ShowcaseContainerLeft className="showcase1-container">
             <div>

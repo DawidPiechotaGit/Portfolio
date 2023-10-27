@@ -7,7 +7,7 @@ export const Title = () => {
     <>
       <ParticleBG></ParticleBG>
       <Navigation></Navigation>
-      <div className="home-wrapper">
+      <div className="home-wrapper" id="home">
         <div className="home-container">
           <div className="title-wrapper">
             <h1>Dawid Piechota</h1>

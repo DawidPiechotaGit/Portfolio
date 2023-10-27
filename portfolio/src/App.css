@@ -248,3 +248,13 @@ input:checked + label .description {
   height: 100vh !important;
   width: 100% !important;
 }
+
+.text-left {
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.text-left:hover {
+  cursor: pointer;
+}

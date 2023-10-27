@@ -3,7 +3,7 @@ import "../App.css";
 export const Cards = () => {
   return (
     <>
-      <div className="card-wrapper">
+      <div className="card-wrapper" id="cards">
         <div className="card-container">
           <input type="radio" name="slide" id="c1" />
           <label htmlFor="c1" className="card">
