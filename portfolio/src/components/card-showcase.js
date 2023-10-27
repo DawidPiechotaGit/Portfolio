@@ -11,7 +11,7 @@ const ShowcaseWrapper = styled.div`
 `;
 
 const ShowcaseContainer = styled.div`
-  padding: 10% 20%;
+  padding: 5% 20%;
   height: 150vh;
 `;
 
@@ -97,8 +97,15 @@ export const CardShowcase = () => {
               <p>Simple Weather App</p>
               <Description>Built with OpenWeather API</Description>
               <div className="btn-container">
-                <ButtonStyled>Live Demo</ButtonStyled>
-                <ButtonStyled>Code</ButtonStyled>
+                <a href="https://weatherapp-cf675.web.app/" target="_blank">
+                  <ButtonStyled>Live Demo</ButtonStyled>
+                </a>
+                <a
+                  href="https://github.com/DawidPiechotaGit/WeatherApp"
+                  target="_blank"
+                >
+                  <ButtonStyled>Code</ButtonStyled>
+                </a>
               </div>
             </TextContainer>
           </ShowcaseContainerLeft>
@@ -131,8 +138,15 @@ export const CardShowcase = () => {
               <p>Advanced Weather App</p>
               <Description>Built with OpenWeather API</Description>
               <div className="btn-container">
-                <ButtonStyled>Live Demo</ButtonStyled>
-                <ButtonStyled>Code</ButtonStyled>
+                <a href="https://weatherapp-a4294.web.app/" target="_blank">
+                  <ButtonStyled>Live Demo</ButtonStyled>
+                </a>
+                <a
+                  href="https://github.com/DawidPiechotaGit/WeatherAPP-/tree/main/weatherapp"
+                  target="_blank"
+                >
+                  <ButtonStyled>Code</ButtonStyled>
+                </a>
               </div>
             </TextContainer>
           </ShowcaseContainerRight>
@@ -165,7 +179,12 @@ export const CardShowcase = () => {
                 <a href="https://shortly-a5f5b.web.app/" target="_blank">
                   <ButtonStyled>Live Demo</ButtonStyled>
                 </a>
-                <ButtonStyled>Code</ButtonStyled>
+                <a
+                  href="https://github.com/DawidPiechotaGit/Shortly"
+                  target="_blank"
+                >
+                  <ButtonStyled>Code</ButtonStyled>
+                </a>
               </div>
             </TextContainer>
           </ShowcaseContainerLeft>
@@ -200,8 +219,15 @@ export const CardShowcase = () => {
                 Multi-page website built for a game server
               </Description>
               <div className="btn-container">
-                <ButtonStyled>Live Demo</ButtonStyled>
-                <ButtonStyled>Code</ButtonStyled>
+                <a href="https://pulse-521e0.web.app/" target="_blank">
+                  <ButtonStyled>Live Demo</ButtonStyled>
+                </a>
+                <a
+                  href="https://github.com/DawidPiechotaGit/PulseWebsite"
+                  target="_blank"
+                >
+                  <ButtonStyled>Code</ButtonStyled>
+                </a>
               </div>
             </TextContainer>
           </ShowcaseContainerRight>
