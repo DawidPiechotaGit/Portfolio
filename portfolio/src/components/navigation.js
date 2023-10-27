@@ -38,7 +38,7 @@ export const Navigation = () => {
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}
+              duration={1500}
             >
               Home
             </Link>
@@ -48,7 +48,7 @@ export const Navigation = () => {
               spy={true}
               smooth={true}
               offset={50}
-              duration={500}
+              duration={1500}
             >
               About Me
             </Link>
@@ -58,7 +58,7 @@ export const Navigation = () => {
               spy={true}
               smooth={true}
               offset={50}
-              duration={500}
+              duration={1500}
             >
               Showcase
             </Link>
@@ -68,7 +68,7 @@ export const Navigation = () => {
               spy={true}
               smooth={true}
               offset={50}
-              duration={500}
+              duration={1500}
             >
               Contact
             </Link>
