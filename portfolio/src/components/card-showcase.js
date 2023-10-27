@@ -55,8 +55,8 @@ const ButtonStyled = styled.button`
   font-family: inherit;
   font-weight: 700;
   font-size: 12px;
-  border-radius: 5px;
-  border: 2px solid var(--primary);
+  border-radius: 0px;
+  border: 1px solid var(--primary);
   color: white;
   background-color: transparent;
   cursor: pointer;
