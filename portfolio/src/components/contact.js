@@ -56,6 +56,7 @@ const TextArea = styled.textarea`
   font-weight: 700;
   letter-spacing: 0.07em;
   outline: none;
+  resize: none;
   &:focus {
     outline: 1px solid var(--primary);
   }
@@ -98,7 +99,11 @@ export const Contact = () => {
 
             <Div>
               <FormLabel htmlFor="">Email</FormLabel>
-              <FormInput className="email" type="text" placeholder="Email..." />
+              <FormInput
+                className="email"
+                type="email"
+                placeholder="Email..."
+              />
             </Div>
 
             <Div>
