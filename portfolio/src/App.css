@@ -217,15 +217,15 @@ small {
   text-transform: uppercase;
 }
 
-input {
+.card-input {
   display: none;
 }
 
-input:checked + label {
+.card-input:checked + label {
   width: 600px;
 }
 
-input:checked + label .description {
+.card-input:checked + label .description {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }

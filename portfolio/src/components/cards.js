@@ -11,7 +11,13 @@ export const Cards = () => {
     <>
       <AboutMeWrapper className="card-wrapper" id="cards">
         <div className="card-container">
-          <input type="radio" name="slide" id="c1" defaultChecked />
+          <input
+            type="radio"
+            className="card-input"
+            name="slide"
+            id="c1"
+            defaultChecked
+          />
           <label htmlFor="c1" className="card">
             <div className="row">
               <div className="icon">1</div>
@@ -21,7 +27,7 @@ export const Cards = () => {
               </div>
             </div>
           </label>
-          <input type="radio" name="slide" id="c2" />
+          <input type="radio" className="card-input" name="slide" id="c2" />
           <label htmlFor="c2" className="card">
             <div className="row">
               <div className="icon">2</div>
@@ -31,7 +37,7 @@ export const Cards = () => {
               </div>
             </div>
           </label>
-          <input type="radio" name="slide" id="c3" />
+          <input type="radio" className="card-input" name="slide" id="c3" />
           <label htmlFor="c3" className="card">
             <div className="row">
               <div className="icon">3</div>
@@ -41,7 +47,7 @@ export const Cards = () => {
               </div>
             </div>
           </label>
-          <input type="radio" name="slide" id="c4" />
+          <input type="radio" className="card-input" name="slide" id="c4" />
           <label htmlFor="c4" className="card">
             <div className="row">
               <div className="icon">4</div>
