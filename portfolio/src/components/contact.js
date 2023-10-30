@@ -40,6 +40,10 @@ const FormInput = styled.input`
   color: var(--text);
   font-weight: 700;
   letter-spacing: 0.07em;
+  outline: none;
+  &:focus {
+    outline: 1px solid var(--primary);
+  }
 `;
 
 const TextArea = styled.textarea`
@@ -51,6 +55,10 @@ const TextArea = styled.textarea`
   color: var(--text);
   font-weight: 700;
   letter-spacing: 0.07em;
+  outline: none;
+  &:focus {
+    outline: 1px solid var(--primary);
+  }
 `;
 
 const Title = styled.h1`
@@ -72,6 +80,7 @@ const SubmitBTN = styled.button`
   &:hover {
     transition: all 0.7s ease-out;
     background-color: var(--primary);
+    cursor: pointer;
   }
 `;
 
