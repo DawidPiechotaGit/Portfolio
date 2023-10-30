@@ -6,7 +6,7 @@ const NavWrapper = styled.div`
   position: sticky;
   position: fixed;
   top: 0;
-  background-color: #3651687e;
+  background-color: #161616;
   z-index: 2;
   width: 100%;
 `;
@@ -64,7 +64,7 @@ export const Navigation = () => {
             </Link>
             <Link
               className="text-left"
-              to="showcase"
+              to="contact"
               spy={true}
               smooth={true}
               offset={50}
