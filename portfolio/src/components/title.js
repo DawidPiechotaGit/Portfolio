@@ -11,9 +11,7 @@ export const Title = () => {
         <div className="home-container">
           <div className="title-wrapper">
             <h1>Dawid Piechota</h1>
-            <h2>
-              <span>Junior</span> Frontend Developer
-            </h2>
+            <h2>Front-End Developer</h2>
           </div>
           <div className="circle-wrapper">
             <div className="outline circle"></div>
