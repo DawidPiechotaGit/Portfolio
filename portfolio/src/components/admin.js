@@ -1,6 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../api/firebase";
+import styled from "styled-components";
+
+const AdminContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 5% 20%;
+  background: var(--background);
+`;
+
+const AdminCard = styled.div`
+  padding: 30px;
+  color: white;
+  background: var(--secondary);
+  border-radius: 5px;
+  margin: 20px;
+  letter-spacing: 0.07em;
+`;
 
 export const Admin = () => {
   const [contact, setContact] = useState([]);
@@ -23,20 +40,26 @@ export const Admin = () => {
 
   return (
     <>
-      {contact.length === 0 ? (
-        <p> Loading</p>
-      ) : (
-        contact.map(({ id, name, email, phone, message }) => {
-          return (
-            <React.Fragment key={id}>
-              <h1>{name}</h1>
-              <p>{email}</p>
-              <p>{phone}</p>
-              <p>{message}</p>
-            </React.Fragment>
-          );
-        })
-      )}
+      <AdminContainer>
+        {contact.length === 0 ? (
+          <p> Loading</p>
+        ) : (
+          contact.map(({ id, name, email, phone, message }) => {
+            return (
+              <AdminCard>
+                <React.Fragment key={id}>
+                  <h1 style={{ paddingBottom: "25px", fontSize: "25px" }}>
+                    {name}
+                  </h1>
+                  <p style={{ paddingBottom: "15px" }}>Email: {email}</p>
+                  <p style={{ paddingBottom: "15px" }}>Phone: {phone}</p>
+                  <p>{message}</p>
+                </React.Fragment>
+              </AdminCard>
+            );
+          })
+        )}
+      </AdminContainer>
     </>
   );
 };
