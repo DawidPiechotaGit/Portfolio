@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../api/firebase";
 
 const ContactWrapper = styled.div`
   width: 100%;
@@ -86,15 +88,45 @@ const SubmitBTN = styled.button`
 `;
 
 export const Contact = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const { name, email, phone, message } = event.target.elements;
+
+    const contact = {
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      message: message.value,
+    };
+
+    console.log(contact);
+
+    const contactCollection = collection(db, "contact");
+    addDoc(contactCollection, contact).then(() => {
+      alert("Success!");
+    });
+
+    name.value = "";
+    email.value = "";
+    phone.value = "";
+    message.value = "";
+  };
   return (
     <>
       <ContactWrapper className="contact-wrapper" id="contact">
         <ContactContainer className="contact-container">
-          <ContactForm className="contact-form">
+          <ContactForm className="contact-form" onSubmit={handleSubmit}>
             <Title>CONTACT</Title>
             <Div>
               <FormLabel htmlFor="">Name</FormLabel>
-              <FormInput className="name" type="text" placeholder="Name..." />
+              <FormInput
+                className="name"
+                name="name"
+                id="name"
+                type="text"
+                placeholder="Name..."
+              />
             </Div>
 
             <Div>
@@ -103,6 +135,19 @@ export const Contact = () => {
                 className="email"
                 type="email"
                 placeholder="Email..."
+                name="email"
+                id="email"
+              />
+            </Div>
+
+            <Div>
+              <FormLabel htmlFor="">Phone</FormLabel>
+              <FormInput
+                className="phone"
+                type="number"
+                placeholder="Phone Number..."
+                name="phone"
+                id="phone"
               />
             </Div>
 
@@ -110,8 +155,8 @@ export const Contact = () => {
               <FormLabel htmlFor="">Message</FormLabel>
               <TextArea
                 className="message"
-                name=""
-                id=""
+                name="message"
+                id="message"
                 cols={30}
                 rows={10}
                 placeholder="Message..."
