@@ -42,7 +42,7 @@ export const Admin = () => {
     <>
       <AdminContainer>
         {contact.length === 0 ? (
-          <p> Loading</p>
+          <p>No Respone</p>
         ) : (
           contact.map(({ id, name, email, phone, message }) => {
             return (
