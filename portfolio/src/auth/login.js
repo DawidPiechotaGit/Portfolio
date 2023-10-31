@@ -20,12 +20,12 @@ export const Login = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((jwt) => {
         e.target.reset();
-        console.log(jwt);
+        alert("Success");
       })
       .catch((e) => {
         console.dir(e);
       });
   };
 
-  return <Form submitText="Admin Login" onSubmit={handleLogin} />;
+  return <Form submitText="Login" onSubmit={handleLogin} />;
 };
