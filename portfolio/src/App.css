@@ -257,4 +257,5 @@ small {
 
 .text-left:hover {
   cursor: pointer;
+  color: var(--primary);
 }
