@@ -10,7 +10,6 @@ import { Navigation } from "./components/navigation";
 
 function App() {
   const [isAuth, setIsAuth] = useState(null);
-  console.log(isAuth);
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {

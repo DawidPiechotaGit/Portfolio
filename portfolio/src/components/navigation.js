@@ -32,7 +32,6 @@ const TextRight = styled.a`
 `;
 
 export const Navigation = (isAuth) => {
-  console.log(isAuth);
   return (
     <>
       <NavWrapper className="nav-wrapper">
