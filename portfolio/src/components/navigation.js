@@ -52,8 +52,8 @@ export const Navigation = (isAuth) => {
                 }}
               ></img>
             </NavLink>
-            <Link
-              className="text-left"
+            {/* <Link
+              className="text-left left"
               to="home"
               spy={true}
               smooth={true}
@@ -61,7 +61,7 @@ export const Navigation = (isAuth) => {
               duration={1500}
             >
               Home
-            </Link>
+            </Link> */}
             <Link
               className="text-left"
               to="cards"
