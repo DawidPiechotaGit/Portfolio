@@ -6,9 +6,11 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./api/firebase";
 import { useEffect, useState } from "react";
 import { Admin } from "./components/admin";
+import { Navigation } from "./components/navigation";
 
 function App() {
   const [isAuth, setIsAuth] = useState(null);
+  console.log(isAuth);
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -21,6 +23,7 @@ function App() {
   }, []);
   return (
     <>
+      <Navigation isAuth={isAuth}></Navigation>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
