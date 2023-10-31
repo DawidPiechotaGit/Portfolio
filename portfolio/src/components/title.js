@@ -6,7 +6,6 @@ export const Title = () => {
   return (
     <>
       <ParticleBG></ParticleBG>
-      <Navigation></Navigation>
       <div className="home-wrapper" id="home">
         <div className="home-container">
           <div className="title-wrapper">

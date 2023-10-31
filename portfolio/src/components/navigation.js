@@ -1,6 +1,7 @@
 import "../App.css";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 const NavWrapper = styled.div`
   position: sticky;
@@ -24,14 +25,34 @@ const TextRight = styled.a`
   padding: 0 10px;
   width: 50px;
   height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const Navigation = () => {
+export const Navigation = (isAuth) => {
+  console.log(isAuth);
   return (
     <>
       <NavWrapper className="nav-wrapper">
         <NavContainer className="nav-container">
-          <div>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <NavLink
+              className="text-left"
+              to="/"
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <img
+                src="https://t4.ftcdn.net/jpg/03/58/57/35/360_F_358573538_BNoT22Ti0oklTZRqBkvSevVaAHLBam5b.jpg"
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                }}
+              ></img>
+            </NavLink>
             <Link
               className="text-left"
               to="home"
@@ -72,8 +93,13 @@ export const Navigation = () => {
             >
               Contact
             </Link>
+            {isAuth.isAuth === true && (
+              <NavLink className="text-left" to="admin">
+                Admin
+              </NavLink>
+            )}
           </div>
-          <div>
+          <div style={{ display: "flex" }}>
             <TextRight
               href="https://github.com/DawidPiechotaGit"
               target="_blank"
