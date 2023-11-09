@@ -179,10 +179,11 @@ small {
   color: white;
   display: flex;
   flex-wrap: nowrap;
+  align-items: flex-end;
 }
 
 .card > .row > .icon {
-  background: var(--background);
+  background: #0cafd4;
   color: white;
   border-radius: 50%;
   width: 50px;
@@ -190,6 +191,7 @@ small {
   justify-content: center;
   align-items: center;
   margin: 15px;
+  height: 50px;
 }
 
 .card > .row > .description {
@@ -197,20 +199,27 @@ small {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  height: 80px;
+  height: 400px;
   width: 520px;
   opacity: 0;
   transform: translateY(30px);
   transition-delay: 0.3s;
   transition: all 0.3s ease;
-  background-color: #6d6d6d60;
+  background-color: #6d6d6db4;
   border-radius: 4px;
   padding-left: 10px;
+  letter-spacing: 0.12em;
 }
 
 .description p {
   color: var(--text);
-  padding-top: 5px;
+  padding-top: 10px;
+}
+
+.description a {
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
 }
 
 .description h4 {
