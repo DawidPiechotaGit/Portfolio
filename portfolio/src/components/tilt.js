@@ -1,6 +1,19 @@
 import Tilt from "react-parallax-tilt";
+import styled from "styled-components";
 
 export const CardTilt = (url) => {
+  const StyledCard = styled.div`
+    height: 200px;
+    width: 400px;
+    background-image: url(${url.url});
+    background-size: cover;
+    box-shadow: 0px 18px 10px -15px rgba(0, 0, 0, 1);
+
+    @media (max-width: 600px) {
+      height: 100px;
+      width: 200px;
+    }
+  `;
   return (
     <>
       <Tilt
@@ -12,15 +25,7 @@ export const CardTilt = (url) => {
         transitionEasing="cubic-bezier(.03,.98,.52,.99)"
         glareMaxOpacity={0.2}
       >
-        <div
-          style={{
-            height: "200px",
-            width: "400px",
-            backgroundImage: `url(${url.url})`,
-            backgroundSize: "cover",
-            boxShadow: "0px 18px 10px -15px rgba(0,0,0,1.0)",
-          }}
-        ></div>
+        <StyledCard></StyledCard>
       </Tilt>
     </>
   );

@@ -46,6 +46,9 @@ const FormInput = styled.input`
   &:focus {
     outline: 1px solid var(--primary);
   }
+  @media (max-width: 600px) {
+    width: 80vw;
+  }
 `;
 
 const TextArea = styled.textarea`
@@ -61,6 +64,9 @@ const TextArea = styled.textarea`
   resize: none;
   &:focus {
     outline: 1px solid var(--primary);
+  }
+  @media (max-width: 600px) {
+    width: 80vw;
   }
 `;
 
@@ -84,6 +90,9 @@ const SubmitBTN = styled.button`
     transition: all 0.7s ease-out;
     background-color: var(--primary);
     cursor: pointer;
+  }
+  @media (max-width: 600px) {
+    width: 50%;
   }
 `;
 

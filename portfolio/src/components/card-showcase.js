@@ -13,6 +13,10 @@ const ShowcaseWrapper = styled.div`
 const ShowcaseContainer = styled.div`
   padding: 5% 20%;
   height: 170vh;
+
+  @media (max-width: 600px) {
+    height: 100%;
+  }
 `;
 
 const ShowcaseContainerLeft = styled.div`
@@ -22,6 +26,11 @@ const ShowcaseContainerLeft = styled.div`
   gap: 5%;
   color: white;
   margin-bottom: 10%;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const ShowcaseContainerRight = styled.div`
@@ -31,6 +40,11 @@ const ShowcaseContainerRight = styled.div`
   gap: 5%;
   color: white;
   margin-bottom: 10%;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -41,6 +55,10 @@ const TextContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
+  @media (max-width: 600px) {
+    align-items: center;
+  }
 `;
 
 const Description = styled.p`
@@ -95,10 +113,7 @@ export const CardShowcase = () => {
             <div>
               <CardTilt url="https://i.imgur.com/IJFxqez.png"></CardTilt>
             </div>
-            <TextContainer
-              className="text-container"
-              style={{ alignItems: "flex-end" }}
-            >
+            <TextContainer className="text-container end">
               <p>Advanced Weather App</p>
               <Description>Built with OpenWeather API</Description>
               <div className="btn-container">
@@ -138,10 +153,7 @@ export const CardShowcase = () => {
             <div>
               <CardTilt url="https://i.imgur.com/yTRy8UG.png"></CardTilt>
             </div>
-            <TextContainer
-              className="text-container"
-              style={{ alignItems: "flex-end" }}
-            >
+            <TextContainer className="text-container end">
               <p>Gaming Server Website</p>
               <Description>
                 Multi-page website built for a game server

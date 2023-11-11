@@ -72,6 +72,12 @@ small {
   justify-content: center;
 }
 
+@media only screen and (max-width: 400px) {
+  .home-container {
+    flex-direction: column;
+  }
+}
+
 .title-wrapper {
   display: flex;
   flex-direction: column;
@@ -121,6 +127,34 @@ small {
   background-color: rgb(233, 233, 233);
 }
 
+@media only screen and (max-width: 400px) {
+  .home-container {
+    gap: 10%;
+  }
+  .title-wrapper {
+    width: 90%;
+    text-align: center;
+  }
+  .home-container > .title-wrapper > h1 {
+    font-size: 40px;
+    margin-right: 0;
+  }
+  .home-container > .title-wrapper > h2 {
+    font-size: 20px;
+  }
+  .image-icon {
+    height: 200px;
+    width: 200px;
+    object-position: -5px -95px;
+    top: 105px;
+    left: 105px;
+  }
+  .circle-wrapper {
+    width: 210px;
+    height: 210px;
+  }
+}
+
 .outline {
   background-color: var(--primary);
   border: 2.5px dashed var(--primary);
@@ -159,6 +193,14 @@ small {
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
+}
+
+@media only screen and (max-width: 400px) {
+  .card-container {
+    height: 700px;
+    width: 90%;
+    flex-direction: column;
+  }
 }
 
 .card {
@@ -211,6 +253,17 @@ small {
   letter-spacing: 0.12em;
 }
 
+@media only screen and (max-width: 400px) {
+  .card > .row > .description {
+    font-size: 8px;
+    height: 233px;
+    width: 270px;
+  }
+  .description h4 {
+    font-size: 12px;
+  }
+}
+
 .description p {
   color: var(--text);
   padding-top: 10px;
@@ -232,6 +285,12 @@ small {
 
 .card-input:checked + label {
   width: 600px;
+}
+
+@media only screen and (max-width: 400px) {
+  .card-input:checked + label {
+    width: 350px;
+  }
 }
 
 .card-input:checked + label .description {
@@ -267,4 +326,8 @@ small {
 .text-left:hover {
   cursor: pointer;
   color: var(--primary);
+}
+
+.end {
+  align-items: flex-end;
 }
