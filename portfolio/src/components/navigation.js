@@ -17,7 +17,7 @@ const NavContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   color: white;
-  padding: 10px 5%;
+  padding: 0px 5%;
   align-items: center;
 `;
 
@@ -29,6 +29,16 @@ const TextRight = styled.a`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  &:hover {
+    transition: 500ms;
+    transform: scale(1.3);
+  }
+`;
+
+const ToneLine = styled.div`
+  width: 100%;
+  height: 5px;
+  background-color: #0cafd4;
 `;
 
 export const Navigation = (isAuth) => {
@@ -45,8 +55,8 @@ export const Navigation = (isAuth) => {
               <img
                 src="https://t4.ftcdn.net/jpg/03/58/57/35/360_F_358573538_BNoT22Ti0oklTZRqBkvSevVaAHLBam5b.jpg"
                 style={{
-                  width: "50px",
-                  height: "50px",
+                  width: "30px",
+                  height: "30px",
                   borderRadius: "50%",
                   objectFit: "cover",
                 }}
@@ -132,7 +142,7 @@ export const Navigation = (isAuth) => {
               </svg>
             </TextRight>
             <TextRight
-              href="https://www.linkedin.com/in/dawid-piechota-206213266/"
+              href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:c72ffc28-22bb-4bd3-8c55-8872629ba346"
               target="_blank"
             >
               <svg
@@ -149,6 +159,7 @@ export const Navigation = (isAuth) => {
             </TextRight>
           </div>
         </NavContainer>
+        <ToneLine></ToneLine>
       </NavWrapper>
     </>
   );
