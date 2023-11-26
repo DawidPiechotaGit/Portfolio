@@ -12,7 +12,7 @@ const ShowcaseWrapper = styled.div`
 
 const ShowcaseContainer = styled.div`
   padding: 5% 20%;
-  height: 170vh;
+  // height: 170vh;
 
   @media (max-width: 600px) {
     height: 100%;
