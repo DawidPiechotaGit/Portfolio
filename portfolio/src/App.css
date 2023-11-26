@@ -62,6 +62,7 @@ small {
     var(--background) 69%,
     var(--secondary) 69.05%
   );
+  /* backdrop-filter: blur(10px); */
 }
 
 .home-container {
@@ -70,6 +71,7 @@ small {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("https://i.imgur.com/UitDSDM.jpg");
 }
 
 @media only screen and (max-width: 400px) {
@@ -81,13 +83,14 @@ small {
 .title-wrapper {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 40%;
 }
 
 .home-container > .title-wrapper > h1 {
   color: var(--text);
   font-size: 50px;
   margin-right: 5%;
+  text-shadow: 5px 5px #000000;
 }
 
 /* .home-container > .title-wrapper > h1 > span {
@@ -102,6 +105,7 @@ small {
   text-align: center;
   margin-top: 3%;
   font-weight: 200;
+  text-shadow: 5px 5px #000000;
 }
 
 .circle-wrapper {
@@ -167,7 +171,7 @@ small {
   border-radius: 50%;
   padding: 2.5px;
   background-clip: content-box;
-  animation: spin 25s linear infinite;
+  animation: spin 35s linear infinite;
 }
 
 .circle-wrapper:active .circle {
@@ -225,7 +229,7 @@ small {
 }
 
 .card > .row > .icon {
-  background: #0cafd4;
+  background: #0cafd452;
   color: white;
   border-radius: 50%;
   width: 50px;
@@ -299,16 +303,16 @@ small {
 }
 
 .card[for="c1"] {
-  background-image: url("https://i.imgur.com/fY0Txme.png");
+  background-image: url("https://i.imgur.com/IAeVmcI.jpg");
 }
 .card[for="c2"] {
-  background-image: url("https://i.imgur.com/IJFxqez.png");
+  background-image: url("https://i.imgur.com/Ew1ILia.jpg");
 }
 .card[for="c3"] {
-  background-image: url("https://i.imgur.com/YsBWo3u.png");
+  background-image: url("https://i.imgur.com/f0jzwrF.jpg");
 }
 .card[for="c4"] {
-  background-image: url("https://i.imgur.com/yTRy8UG.png");
+  background-image: url("https://i.imgur.com/f0jzwrF.jpg");
 }
 
 #tsparticles {
