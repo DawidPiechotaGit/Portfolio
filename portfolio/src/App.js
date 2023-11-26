@@ -7,6 +7,7 @@ import { auth } from "./api/firebase";
 import { useEffect, useState } from "react";
 import { Admin } from "./components/admin";
 import { Navigation } from "./components/navigation";
+import { NavBurger } from "./components/nav-burger";
 
 function App() {
   const [isAuth, setIsAuth] = useState(null);
@@ -24,6 +25,7 @@ function App() {
   return (
     <>
       <Navigation isAuth={isAuth}></Navigation>
+      <NavBurger isAuth={isAuth}></NavBurger>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

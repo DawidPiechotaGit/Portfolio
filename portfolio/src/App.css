@@ -75,12 +75,6 @@ small {
   background-size: cover;
 }
 
-@media only screen and (max-width: 400px) {
-  .home-container {
-    flex-direction: column;
-  }
-}
-
 .title-wrapper {
   display: flex;
   flex-direction: column;
@@ -132,34 +126,6 @@ small {
   background-color: rgb(233, 233, 233);
 }
 
-@media only screen and (max-width: 400px) {
-  .home-container {
-    gap: 10%;
-  }
-  .title-wrapper {
-    width: 90%;
-    text-align: center;
-  }
-  .home-container > .title-wrapper > h1 {
-    font-size: 40px;
-    margin-right: 0;
-  }
-  .home-container > .title-wrapper > h2 {
-    font-size: 20px;
-  }
-  .image-icon {
-    height: 200px;
-    width: 200px;
-    object-position: -5px -95px;
-    top: 105px;
-    left: 105px;
-  }
-  .circle-wrapper {
-    width: 210px;
-    height: 210px;
-  }
-}
-
 .outline {
   background-color: var(--primary);
   border: 2.5px dashed var(--primary);
@@ -200,10 +166,10 @@ small {
   justify-content: start;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .card-container {
     height: 700px;
-    width: 90%;
+    width: 100%;
     flex-direction: column;
   }
 }
@@ -258,7 +224,26 @@ small {
   letter-spacing: 0.12em;
 }
 
-@media only screen and (max-width: 400px) {
+.open-main-nav {
+  position: absolute;
+  top: 15px;
+  padding-top: 20px;
+  right: 15px;
+  z-index: 1000;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.open-main-nav:focus {
+  outline: none;
+}
+
+.open {
+  display: flex !important;
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
   .card > .row > .description {
     font-size: 8px;
     height: 233px;
@@ -292,7 +277,7 @@ small {
   width: 600px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .card-input:checked + label {
     width: 350px;
   }
@@ -335,4 +320,36 @@ small {
 
 .end {
   align-items: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-container {
+    gap: 10%;
+    flex-direction: column;
+  }
+  .title-wrapper {
+    width: 90%;
+    text-align: center;
+  }
+  .home-container > .title-wrapper > h1 {
+    font-size: 40px;
+    margin-right: 0;
+  }
+  .home-container > .title-wrapper > h2 {
+    font-size: 20px;
+  }
+  .image-icon {
+    height: 200px;
+    width: 200px;
+    object-position: -5px -95px;
+    top: 105px;
+    left: 105px;
+  }
+  .circle-wrapper {
+    width: 210px;
+    height: 210px;
+  }
+  form > h1 {
+    font-size: 40px;
+  }
 }

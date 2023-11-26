@@ -2,28 +2,33 @@ import "../App.css";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const NavWrapper = styled.div`
   position: sticky;
   position: fixed;
   top: 0;
-  background-color: #161616;
   z-index: 2;
   width: 100%;
-  @media (max-width: 600px) {
+  @media (min-width: 600px) {
     display: none;
   }
 `;
 
 const NavContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   color: white;
   padding: 0px 5%;
   align-items: center;
   letter-spacing: 0.8px;
   font-weight: 700;
+  height: 100%;
+  padding: 30px;
+  margin-left: 50%;
+  background-color: #161616;
+  border-radius: 5px;
+  display: none;
 `;
 
 const TextRight = styled.a`
@@ -31,7 +36,7 @@ const TextRight = styled.a`
   width: 50px;
   height: 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   &:hover {
@@ -40,18 +45,40 @@ const TextRight = styled.a`
   }
 `;
 
-const ToneLine = styled.div`
-  width: 100%;
-  height: 5px;
-  background-color: #0cafd4;
-`;
+export const NavBurger = (isAuth) => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-export const Navigation = (isAuth) => {
   return (
     <>
-      <NavWrapper className="nav-wrapper">
-        <NavContainer className="nav-container">
-          <div style={{ display: "flex", alignItems: "center" }}>
+      <NavWrapper>
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          id="burger"
+          class="open-main-nav"
+        >
+          <svg
+            stroke="currentColor"
+            fill="#fff"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            height="20px"
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+          </svg>
+        </button>
+        <NavContainer className={menuOpen ? "open" : ""}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              height: "100%",
+              flexDirection: "column",
+              justifyContent: "center",
+              gap: "30px",
+            }}
+          >
             <NavLink
               className="text-left"
               to="/"
@@ -113,7 +140,7 @@ export const Navigation = (isAuth) => {
               </NavLink>
             )}
           </div>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex", paddingTop: "20px" }}>
             <TextRight
               href="https://github.com/DawidPiechotaGit"
               target="_blank"
@@ -164,7 +191,6 @@ export const Navigation = (isAuth) => {
             </TextRight>
           </div>
         </NavContainer>
-        <ToneLine></ToneLine>
       </NavWrapper>
     </>
   );
