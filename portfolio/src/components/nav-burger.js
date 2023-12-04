@@ -225,9 +225,7 @@ export const NavBurger = (isAuth) => {
   };
 
   return (
-    <div
-      style={{ width: "100%", height: "10vh", position: "fixed", zIndex: "2" }}
-    >
+    <div style={{ width: "100%", height: "0", position: "fixed", zIndex: "2" }}>
       <nav>
         <div className="burger-menu" onClick={updateMenu}>
           <div className={burger_class}></div>
