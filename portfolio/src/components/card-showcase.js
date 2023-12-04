@@ -8,6 +8,11 @@ const ShowcaseWrapper = styled.div`
   //     var(--background) 50.55%
   //   );
   background: var(--background);
+  background-image: url("https://i.imgur.com/yKSHwIJ.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 `;
 
 const ShowcaseContainer = styled.div`
@@ -89,7 +94,7 @@ export const CardShowcase = () => {
     <>
       <ShowcaseWrapper className="showcase-wrapper" id="showcase">
         <ShowcaseContainer className="showcase-container">
-          <ShowcaseContainerLeft className="showcase1-container">
+          <ShowcaseContainerLeft className="showcase1-container hidden">
             <div>
               <CardTilt url="https://i.imgur.com/fY0Txme.png"></CardTilt>
             </div>
@@ -109,7 +114,7 @@ export const CardShowcase = () => {
               </div>
             </TextContainer>
           </ShowcaseContainerLeft>
-          <ShowcaseContainerRight className="showcase1-container">
+          <ShowcaseContainerRight className="showcase1-container hidden">
             <div>
               <CardTilt url="https://i.imgur.com/IJFxqez.png"></CardTilt>
             </div>
@@ -129,7 +134,7 @@ export const CardShowcase = () => {
               </div>
             </TextContainer>
           </ShowcaseContainerRight>
-          <ShowcaseContainerLeft className="showcase1-container">
+          <ShowcaseContainerLeft className="showcase1-container hidden">
             <div>
               <CardTilt url="https://i.imgur.com/YsBWo3u.png"></CardTilt>
             </div>
@@ -149,7 +154,7 @@ export const CardShowcase = () => {
               </div>
             </TextContainer>
           </ShowcaseContainerLeft>
-          <ShowcaseContainerRight className="showcase1-container">
+          <ShowcaseContainerRight className="showcase1-container hidden">
             <div>
               <CardTilt url="https://i.imgur.com/yTRy8UG.png"></CardTilt>
             </div>
@@ -171,7 +176,7 @@ export const CardShowcase = () => {
               </div>
             </TextContainer>
           </ShowcaseContainerRight>
-          <ShowcaseContainerLeft className="showcase1-container">
+          <ShowcaseContainerLeft className="showcase1-container hidden">
             <div>
               <CardTilt url="https://i.imgur.com/cAobfNo.png"></CardTilt>
             </div>
