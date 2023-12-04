@@ -4,6 +4,8 @@ import styled from "styled-components";
 const AboutMeWrapper = styled.div`
   height: 100vh;
   background: var(--secondary);
+  // background-image: url("https://i.imgur.com/nfI5xIN.jpg");
+  // background-attachment: fixed;
 `;
 
 export const Cards = () => {
@@ -18,7 +20,7 @@ export const Cards = () => {
             id="c1"
             defaultChecked
           />
-          <label htmlFor="c1" className="card">
+          <label htmlFor="c1" className="card hidden">
             <div className="row">
               <div className="icon">1</div>
               <div className="description">
@@ -35,7 +37,7 @@ export const Cards = () => {
             </div>
           </label>
           <input type="radio" className="card-input" name="slide" id="c2" />
-          <label htmlFor="c2" className="card">
+          <label htmlFor="c2" className="card hidden">
             <div className="row">
               <div className="icon">2</div>
               <div className="description">
@@ -63,7 +65,7 @@ export const Cards = () => {
             </div>
           </label> */}
           <input type="radio" className="card-input" name="slide" id="c4" />
-          <label htmlFor="c4" className="card">
+          <label htmlFor="c4" className="card hidden">
             <div className="row">
               <div className="icon">3</div>
               <div className="description">
