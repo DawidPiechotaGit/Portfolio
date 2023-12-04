@@ -4,17 +4,14 @@ import { db } from "../api/firebase";
 
 const ContactWrapper = styled.div`
   width: 100%;
-  // height: 100vh;
   background: var(--secondary);
 `;
 
 const ContactContainer = styled.div`
   width: 100%;
-  // height: 100vh;
 `;
 
 const ContactForm = styled.form`
-  // height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,7 +122,7 @@ export const Contact = () => {
     <>
       <ContactWrapper className="contact-wrapper" id="contact">
         <ContactContainer className="contact-container">
-          <ContactForm className="contact-form" onSubmit={handleSubmit}>
+          <ContactForm className="contact-form hidden" onSubmit={handleSubmit}>
             <Title>CONTACT</Title>
             <Div>
               <FormLabel htmlFor="">Name</FormLabel>
