@@ -32,15 +32,29 @@ const TitleBtn = styled.div`
 `;
 
 export const Title = () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+      // else {
+      //   entry.target.classList.remove("show");
+      // }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll(".hidden");
+  hiddenElements.forEach((el) => observer.observe(el));
   return (
     <>
       <ParticleBG></ParticleBG>
       <div className="home-wrapper" id="home">
         <div className="home-container">
           <div className="title-wrapper">
-            <h1>Dawid Piechota</h1>
-            <h2>Front-End Developer</h2>
-            <TitleBtnContainer>
+            <h1 className="hidden">Dawid Piechota</h1>
+            <h2 className="hidden">Front-End Developer</h2>
+            <TitleBtnContainer className="hidden">
               <TitleBtn>
                 <Icons
                   href="https://github.com/DawidPiechotaGit"
@@ -97,7 +111,7 @@ export const Title = () => {
               </TitleBtn>
             </TitleBtnContainer>
           </div>
-          <div className="circle-wrapper">
+          <div className="circle-wrapper hidden">
             <div className="outline circle"></div>
             <img
               className="image-icon"
