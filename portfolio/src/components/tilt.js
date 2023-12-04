@@ -7,7 +7,7 @@ export const CardTilt = (url) => {
     width: 400px;
     background-image: url(${url.url});
     background-size: cover;
-    box-shadow: 0px 18px 10px -15px rgba(0, 0, 0, 1);
+    box-shadow: 0px 18px 40px -25px rgb(228 228 228);
 
     @media (max-width: 600px) {
       height: 100px;
